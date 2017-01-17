@@ -851,6 +851,7 @@ class Game {
 
         secretsOnPlay(entity: entity)
         WindowManager.default.updateTrackers()
+        WindowManager.default.oracle.playerSpent(mana: entity.card.cost)
     }
 
     func secretsOnPlay(entity: Entity) {
@@ -1007,6 +1008,7 @@ class Game {
 
         opponentSecrets?.setZero(cardId: CardIds.Secrets.Hunter.DartTrap)
         WindowManager.default.updateTrackers()
+        WindowManager.default.oracle.playerSpent(mana: (Cards.any(byId: cardId)?.cost)!)
     }
 
     // MARK: - opponent
@@ -1063,6 +1065,7 @@ class Game {
             }
         }
         WindowManager.default.updateTrackers()
+        WindowManager.default.oracle.opponentSpent(mana: entity.card.cost)
     }
 
     func opponentHandDiscard(entity: Entity, cardId: String?, from: Int, turn: Int) {
@@ -1202,6 +1205,7 @@ class Game {
         opponent.heroPower(turn: turn)
         Log.info?.message("Opponent Hero Power \(cardId) \(turn) ")
         WindowManager.default.updateTrackers()
+        WindowManager.default.oracle.opponentSpent(mana: (Cards.any(byId: cardId)?.cost)!)
     }
 
     // MARK: - game actions

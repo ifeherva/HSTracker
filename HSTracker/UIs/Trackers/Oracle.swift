@@ -9,11 +9,33 @@
 import Foundation
 
 class Oracle: OverWindowController {
+    
+    @IBOutlet weak var manaView: AdvantageView!
 
     override func windowDidLoad() {
         super.windowDidLoad()
-        
-        
+    }
+    
+    func playerSpent(mana: Int) {
+        manaView.increaseA(value: mana)
+    }
+    
+    func opponentSpent(mana: Int) {
+        manaView.increaseB(value: mana)
+    }
+    
+    func reset() {
+        manaView.reset()
     }
 
+}
+
+class OracleView: NSView {
+    
+    override func draw(_ dirtyRect: NSRect) {
+        //super.draw(dirtyRect)
+        // draw black background
+        NSColor.black.set()
+        NSRectFill(dirtyRect)
+    }
 }

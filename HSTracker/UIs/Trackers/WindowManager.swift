@@ -266,6 +266,9 @@ class WindowManager {
         
         // Oracle
         show(controller: oracle, show: true)
+        if reset {
+            oracle.reset()
+        }
     }
 
     // MARK: - Floating card
