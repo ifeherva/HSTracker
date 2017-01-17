@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0EDBB81E2E6277009CD83E /* Oracle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C0EDBB71E2E6277009CD83E /* Oracle.xib */; };
+		1C0EDBBC1E2E6480009CD83E /* AdvantageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0EDBBB1E2E6480009CD83E /* AdvantageView.swift */; };
+		1C0EDBBE1E2E66F8009CD83E /* Oracle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0EDBBD1E2E66F8009CD83E /* Oracle.swift */; };
 		1C132F821DBA24C1002B1BF2 /* AppHealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C132F811DBA24C1002B1BF2 /* AppHealth.swift */; };
 		1CB623A71DD37C890045E0CF /* GlowFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB623A61DD37C890045E0CF /* GlowFilter.m */; };
 		340AAC051D0544AD0015FE33 /* StringTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340AAC041D0544AD0015FE33 /* StringTracker.swift */; };
@@ -371,6 +374,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C0EDBB71E2E6277009CD83E /* Oracle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Oracle.xib; sourceTree = "<group>"; };
+		1C0EDBBB1E2E6480009CD83E /* AdvantageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvantageView.swift; sourceTree = "<group>"; };
+		1C0EDBBD1E2E66F8009CD83E /* Oracle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Oracle.swift; sourceTree = "<group>"; };
 		1C132F811DBA24C1002B1BF2 /* AppHealth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHealth.swift; sourceTree = "<group>"; };
 		1CB623A51DD37C890045E0CF /* GlowFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlowFilter.h; sourceTree = "<group>"; };
 		1CB623A61DD37C890045E0CF /* GlowFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlowFilter.m; sourceTree = "<group>"; };
@@ -1199,6 +1205,9 @@
 				BC90FD0A1D97F81B00BAFC0D /* GraveyardCounter.swift */,
 				43A8A0F01E0BC08F00AF34FD /* JadeCounter.swift */,
 				43BDF0BD1DB89A830081964A /* WindowManager.swift */,
+				1C0EDBB71E2E6277009CD83E /* Oracle.xib */,
+				1C0EDBBB1E2E6480009CD83E /* AdvantageView.swift */,
+				1C0EDBBD1E2E66F8009CD83E /* Oracle.swift */,
 			);
 			path = Trackers;
 			sourceTree = "<group>";
@@ -1450,6 +1459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49930DD41DFA859F008C8CD4 /* .swiftlint.yml in Resources */,
+				1C0EDBB81E2E6277009CD83E /* Oracle.xib in Resources */,
 				432B5FC51CB5374100B05D19 /* EditDeck.xib in Resources */,
 				4308EB831D775E2C000897C8 /* UpdatePreferences.xib in Resources */,
 				432B5FC81CB5374600B05D19 /* NewDeck.xib in Resources */,
@@ -1557,6 +1567,7 @@
 				43C567FD1D5E448200451B6F /* HSReplayManager.swift in Sources */,
 				43B6955F1C906A5D00F4D0AC /* OpponentSecrets.swift in Sources */,
 				43C567FF1D5E4F9700451B6F /* HSReplayAPI.swift in Sources */,
+				1C0EDBBC1E2E6480009CD83E /* AdvantageView.swift in Sources */,
 				43D308061C842DC900480488 /* GamePrefences.swift in Sources */,
 				43A8A0F71E1557C900AF34FD /* FormatType.swift in Sources */,
 				439C7EC01C777F8900D29859 /* ArenaHandler.swift in Sources */,
@@ -1656,6 +1667,7 @@
 				436F5D121CFD7E7500DEB9A1 /* DarkBar.swift in Sources */,
 				439DD8FA1DB236A4004EBE47 /* ThemeElement.swift in Sources */,
 				437E56F81DAACB3900FC0FC1 /* Tempostorm.swift in Sources */,
+				1C0EDBBE1E2E66F8009CD83E /* Oracle.swift in Sources */,
 				434C2F3C1C7F48E9001D1D91 /* Hearthnews.swift in Sources */,
 				432C11AB1CCF6B460067C5FE /* Format.swift in Sources */,
 				436789BF1CACF8C900C962D1 /* PlayerDrawChance.swift in Sources */,

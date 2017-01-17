@@ -69,6 +69,11 @@ class WindowManager {
         $0.window?.orderFront(nil)
         return $0
     }(CardHudContainer(windowNibName: "CardHudContainer"))
+    
+    var oracle: Oracle = {
+        $0.window?.orderFront(nil)
+        return $0
+    }(Oracle(windowNibName: "Oracle"))
 
     private var lastCardsUpdateRequest = Date.distantPast.timeIntervalSince1970
 
@@ -118,6 +123,7 @@ class WindowManager {
             self?.playerBoardDamage.window?.orderOut(nil)
             self?.opponentBoardDamage.window?.orderOut(nil)
             self?.cardHudContainer.reset()
+            self?.oracle.window?.orderOut(nil)
         }
     }
 
@@ -257,6 +263,9 @@ class WindowManager {
         } else {
             show(controller: playerTracker, show: false)
         }
+        
+        // Oracle
+        show(controller: oracle, show: true)
     }
 
     // MARK: - Floating card
