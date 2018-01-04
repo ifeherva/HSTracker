@@ -875,7 +875,7 @@
 		439212141DEF5A5E0017AAE5 /* MultiClassGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiClassGroup.swift; sourceTree = "<group>"; };
 		439B1DF51E86CC280098BBBC /* DatabaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseTests.swift; sourceTree = "<group>"; };
 		439BD8C81EBCD40200959F69 /* EnumTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumTests.swift; sourceTree = "<group>"; };
-		439C7E481C7772C000D29859 /* HSTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		439C7E481C7772C000D29859 /* HSTracker+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HSTracker+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		439C7E4B1C7772C000D29859 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = HSTracker/AppDelegate.swift; sourceTree = "<group>"; };
 		439C7E571C7772C000D29859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = HSTracker/Info.plist; sourceTree = "<group>"; };
 		439C7E5C1C7772C100D29859 /* HSTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HSTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1330,7 +1330,7 @@
 		439C7E491C7772C000D29859 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				439C7E481C7772C000D29859 /* HSTracker.app */,
+				439C7E481C7772C000D29859 /* HSTracker+.app */,
 				439C7E5C1C7772C100D29859 /* HSTrackerTests.xctest */,
 			);
 			name = Products;
@@ -1691,9 +1691,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		439C7E471C7772C000D29859 /* HSTracker */ = {
+		439C7E471C7772C000D29859 /* HSTracker+ */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 439C7E701C7772C100D29859 /* Build configuration list for PBXNativeTarget "HSTracker" */;
+			buildConfigurationList = 439C7E701C7772C100D29859 /* Build configuration list for PBXNativeTarget "HSTracker+" */;
 			buildPhases = (
 				439C7E441C7772C000D29859 /* Sources */,
 				439C7E451C7772C000D29859 /* Frameworks */,
@@ -1701,14 +1701,15 @@
 				436789A01CAC078800C962D1 /* CopyFiles */,
 				436789E01CAE484800C962D1 /* Embed Frameworks */,
 				437B5BCC1CD3B50000DE0A41 /* Swiftlint */,
+				BCCB40321FFDEF870064D26F /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = HSTracker;
+			name = "HSTracker+";
 			productName = HSTracker;
-			productReference = 439C7E481C7772C000D29859 /* HSTracker.app */;
+			productReference = 439C7E481C7772C000D29859 /* HSTracker+.app */;
 			productType = "com.apple.product-type.application";
 		};
 		439C7E5B1C7772C100D29859 /* HSTrackerTests */ = {
@@ -1742,7 +1743,7 @@
 				TargetAttributes = {
 					439C7E471C7772C000D29859 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = GZ37WWWK6W;
+						DevelopmentTeam = LCPPMESTJX;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Manual;
 					};
@@ -1771,7 +1772,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				439C7E471C7772C000D29859 /* HSTracker */,
+				439C7E471C7772C000D29859 /* HSTracker+ */,
 				439C7E5B1C7772C100D29859 /* HSTrackerTests */,
 			);
 		};
@@ -1843,6 +1844,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		BCCB40321FFDEF870064D26F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage outdated --xcode-warnings";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -2256,7 +2270,7 @@
 /* Begin PBXTargetDependency section */
 		439C7E5E1C7772C100D29859 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 439C7E471C7772C000D29859 /* HSTracker */;
+			target = 439C7E471C7772C000D29859 /* HSTracker+ */;
 			targetProxy = 439C7E5D1C7772C100D29859 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -2638,9 +2652,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Developer ID Application: Benjamin Michotte (GZ37WWWK6W)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = GZ37WWWK6W;
+				DEVELOPMENT_TEAM = LCPPMESTJX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
@@ -2653,8 +2667,8 @@
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "-DDEBUG $(inherited) -Xfrontend -warn-long-function-bodies=150 -Xfrontend -warn-long-expression-type-checking=150";
-				PRODUCT_BUNDLE_IDENTIFIER = be.michotte.hstracker;
+				OTHER_SWIFT_FLAGS = "-DDEBUG $(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = net.fehervari.hstrackerplus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "HSTracker/HSTracker-Bridging-Header.h";
@@ -2668,9 +2682,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Developer ID Application: Benjamin Michotte (GZ37WWWK6W)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = GZ37WWWK6W;
+				DEVELOPMENT_TEAM = LCPPMESTJX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
@@ -2682,7 +2696,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = be.michotte.hstracker;
+				PRODUCT_BUNDLE_IDENTIFIER = net.fehervari.hstrackerplus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "HSTracker/HSTracker-Bridging-Header.h";
@@ -2742,7 +2756,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		439C7E701C7772C100D29859 /* Build configuration list for PBXNativeTarget "HSTracker" */ = {
+		439C7E701C7772C100D29859 /* Build configuration list for PBXNativeTarget "HSTracker+" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				439C7E711C7772C100D29859 /* Debug */,

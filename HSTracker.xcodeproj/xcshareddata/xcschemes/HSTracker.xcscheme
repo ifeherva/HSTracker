@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "439C7E471C7772C000D29859"
-               BuildableName = "HSTracker.app"
-               BlueprintName = "HSTracker"
+               BuildableName = "HSTracker+.app"
+               BlueprintName = "HSTracker+"
                ReferencedContainer = "container:HSTracker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -58,8 +58,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "439C7E471C7772C000D29859"
-            BuildableName = "HSTracker.app"
-            BlueprintName = "HSTracker"
+            BuildableName = "HSTracker+.app"
+            BlueprintName = "HSTracker+"
             ReferencedContainer = "container:HSTracker.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,8 +82,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "439C7E471C7772C000D29859"
-            BuildableName = "HSTracker.app"
-            BlueprintName = "HSTracker"
+            BuildableName = "HSTracker+.app"
+            BlueprintName = "HSTracker+"
             ReferencedContainer = "container:HSTracker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -113,8 +113,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "439C7E471C7772C000D29859"
-            BuildableName = "HSTracker.app"
-            BlueprintName = "HSTracker"
+            BuildableName = "HSTracker+.app"
+            BlueprintName = "HSTracker+"
             ReferencedContainer = "container:HSTracker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
